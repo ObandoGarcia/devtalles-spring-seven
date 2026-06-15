@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymelef.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar habiilidad</title>
+</head>
+<body>
+    <h1>Agregar una nueva habilidad</h1>
+    <form th:action="@{/skills/add}" th:object="${skill}" method="post">
+
+        <label th:for="skillName">Nombre</label>
+        <input type="text" th:field="*{skillName}" id="skillName">
+
+        <label th:for="skillLevel">Nivel</label>
+        <input type="text" th:field="*{skillLevel}" id="skillLevel">
+
+        <button type="submit">Guardar habilidad</button>
+    </form>
+</body>
+</html>
