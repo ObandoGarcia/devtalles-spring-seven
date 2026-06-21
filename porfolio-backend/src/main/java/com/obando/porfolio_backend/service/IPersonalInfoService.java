@@ -9,7 +9,7 @@ public interface IPersonalInfoService {
 
     PersonalInfo save(PersonalInfo personalInfo);
 
-    Optional<PersonalInfo> findByiD(Long id);
+    Optional<PersonalInfo> findById(Long id);
 
     List<PersonalInfo> findAll();
 

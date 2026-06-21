@@ -93,7 +93,7 @@ public class PersonalInfoRepositoryImpl implements IPersonalInfoRepository {
     }
 
     @Override
-    public Optional<PersonalInfo> findByiD(Long id) {
+    public Optional<PersonalInfo> findById(Long id) {
         String sql = "select * from personal_info where id = ?";
 
         try{
